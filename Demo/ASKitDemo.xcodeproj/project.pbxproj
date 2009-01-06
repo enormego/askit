@@ -17,6 +17,7 @@
 		283F8E8A0F13A96F00AD4AF9 /* ASTableViewCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 283F8E830F13A96F00AD4AF9 /* ASTableViewCellLabel.m */; };
 		283F8E8B0F13A96F00AD4AF9 /* ASTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283F8E850F13A96F00AD4AF9 /* ASTableViewController.m */; };
 		283F8E8F0F13AB2A00AD4AF9 /* ASHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 283F8E8E0F13AB2A00AD4AF9 /* ASHeaderView.m */; };
+		286060CF0F13EB64002FD6CC /* ASSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 286060CE0F13EB64002FD6CC /* ASSectionHeaderView.m */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28A85B7B0F13AD7D00417936 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A85B770F13AD7D00417936 /* AppDelegate.m */; };
 		28A85BA50F13AF1200417936 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A85BA40F13AF1200417936 /* TableViewController.m */; };
@@ -45,6 +46,8 @@
 		283F8E850F13A96F00AD4AF9 /* ASTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewController.m; sourceTree = "<group>"; };
 		283F8E8D0F13AB2A00AD4AF9 /* ASHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHeaderView.h; sourceTree = "<group>"; };
 		283F8E8E0F13AB2A00AD4AF9 /* ASHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHeaderView.m; sourceTree = "<group>"; };
+		286060CD0F13EB64002FD6CC /* ASSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSectionHeaderView.h; sourceTree = "<group>"; };
+		286060CE0F13EB64002FD6CC /* ASSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSectionHeaderView.m; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A85B760F13AD7D00417936 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28A85B770F13AD7D00417936 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				283F8E8E0F13AB2A00AD4AF9 /* ASHeaderView.m */,
 				283F8E800F13A96F00AD4AF9 /* ASTableViewCell.h */,
 				283F8E810F13A96F00AD4AF9 /* ASTableViewCell.m */,
+				286060CD0F13EB64002FD6CC /* ASSectionHeaderView.h */,
+				286060CE0F13EB64002FD6CC /* ASSectionHeaderView.m */,
 				283F8E820F13A96F00AD4AF9 /* ASTableViewCellLabel.h */,
 				283F8E830F13A96F00AD4AF9 /* ASTableViewCellLabel.m */,
 				283F8E840F13A96F00AD4AF9 /* ASTableViewController.h */,
@@ -273,6 +278,7 @@
 				28A85B7B0F13AD7D00417936 /* AppDelegate.m in Sources */,
 				28A85BA50F13AF1200417936 /* TableViewController.m in Sources */,
 				28A85E4E0F13E12A00417936 /* TableHeaderView.m in Sources */,
+				286060CF0F13EB64002FD6CC /* ASSectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +321,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.2;
+				SDKROOT = iphonesimulator2.2;
 			};
 			name = Debug;
 		};
@@ -328,7 +334,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.2;
+				SDKROOT = iphonesimulator2.2;
 			};
 			name = Release;
 		};

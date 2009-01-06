@@ -44,6 +44,10 @@
     return 0;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+	return 29.0f;
+}
+
 // Find out if last row is an alternate, and handle background/footerview accordingly
 - (void)tableView:(UITableView *)tableView willDisplayCell:(ASTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	if(indexPath.section == [tableView numberOfSections] - 1 && indexPath.row == [tableView numberOfRowsInSection:indexPath.section] - 1) {

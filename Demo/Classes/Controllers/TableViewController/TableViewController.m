@@ -25,7 +25,7 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 
@@ -55,6 +55,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+	if(section == 1) {
+		ASSectionHeaderView* header = [[ASSectionHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 28.0f)];
+		header.text = @"Example Section Header";
+		return [header autorelease];
+	} else {
+		return nil;
+	}
 }
 
 - (void)dealloc {
