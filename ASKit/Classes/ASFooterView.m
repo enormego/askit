@@ -7,12 +7,11 @@
 //
 
 #import "ASFooterView.h"
-#import "ASTableViewCell.h"
 #import "ASTableViewCellLabel.h"
 
 
 @implementation ASFooterView
-@synthesize title, alternate;
+@synthesize title;
 
 - (id)initWithFrame:(CGRect)frame {
 	if((self = [super initWithFrame:frame])) {
@@ -29,10 +28,6 @@
 	}
 	
 	return self;
-}
-
-- (void)setAlternate:(BOOL)isAlternate {
-	self.backgroundColor = (alternate = isAlternate) ? [ASTableViewCell alternateColor] : [ASTableViewCell regularColor];
 }
 
 - (NSString*)text {

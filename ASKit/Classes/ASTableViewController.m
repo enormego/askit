@@ -52,8 +52,8 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(ASTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	if(indexPath.section == [tableView numberOfSections] - 1 && indexPath.row == [tableView numberOfRowsInSection:indexPath.section] - 1) {
 		if([cell isKindOfClass:[ASTableViewCell class]]) {
-			((ASFooterView*)self.tableView.tableFooterView).alternate = !cell.alternate;
-			self.view.backgroundColor = cell.alternate ? [ASTableViewCell regularColor] : [ASTableViewCell alternateColor];
+			self.view.backgroundColor = cell.alternate ? [cell regularColor] : [cell alternateColor];
+			((ASFooterView*)self.tableView.tableFooterView).backgroundColor = self.view.backgroundColor;
 		}
 	}
 }
@@ -78,7 +78,7 @@
 			if([self.tableView numberOfRowsInSection:0] > 0 && height > 0.0f) {
 				ASTableViewCell* cell = (ASTableViewCell*)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 				if([cell isKindOfClass:[ASTableViewCell class]]) {
-					headerView.backgroundColor = cell.alternate ? [ASTableViewCell alternateColor] : [ASTableViewCell regularColor];
+					headerView.backgroundColor = cell.backgroundColor;
 				}
 			}
 		}

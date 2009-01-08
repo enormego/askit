@@ -27,9 +27,8 @@
 		imageView.image = [UIImage imageNamed:@"askit-hdr-bck.png"];
 		self.backgroundColor = [UIColor colorWithRed:0.545098039f green:0.552941176f blue:0.556862745f alpha:1.0f];
 		
-		borderLine = [[UIView alloc] initWithFrame:CGRectZero];
-		borderLine.frame = CGRectMake(0.0f, self.height-1.0f, frame.size.width, 1.0f);
-		borderLine.backgroundColor = [ASTableViewCell borderLineColor];
+		borderLine = [[ASTableViewCell borderView] retain];
+		borderLine.frame = CGRectMake(0.0f, self.height-2.0f, frame.size.width, 2.0f);
 		// borderLine.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
 		[self.contentView addSubview:borderLine];
     }

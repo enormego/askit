@@ -11,11 +11,9 @@
 
 @interface ASFooterView : UIView {
 @private
-	BOOL alternate;
 	UILabel* title;
 }
 
 @property(nonatomic,readonly) UILabel* title;
-@property(nonatomic,getter=isAlternate) BOOL alternate;
 @property(nonatomic,copy) NSString* text;
 @end
