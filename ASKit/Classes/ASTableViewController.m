@@ -19,7 +19,7 @@
 	self.view.backgroundColor = [ASTableViewCell regularColor];
 	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 	
-	ASFooterView* footerView = [[ASFooterView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 100.0f)];
+	ASFooterView* footerView = [[ASFooterView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 0.0f)];
 	footerView.text = footerText;
 	self.tableView.tableFooterView = footerView;
 	[footerView release];
@@ -59,6 +59,7 @@
 }
 
 - (void)dealloc {
+	[footerText release];
     [super dealloc];
 }
 

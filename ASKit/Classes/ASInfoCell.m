@@ -30,7 +30,7 @@
 		activityIndicator.hidesWhenStopped = YES;
 		
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
-		
+
 		[self.contentView addSubview:activityIndicator];
 		[self.contentView addSubview:title];
 	}
@@ -47,9 +47,9 @@
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-	
+
     [super setSelected:selected animated:animated];
-	
+
     // Configure the view for the selected state
 }
 

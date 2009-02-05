@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				28A85B740F13AD7D00417936 /* Controllers */,
-				283F8E6C0F13A8D500AD4AF9 /* Libraries */,
+				283F8E6C0F13A8D500AD4AF9 /* Classes */,
 				283F8E4B0F13A75900AD4AF9 /* Other */,
 			);
 			path = Classes;
@@ -115,12 +115,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		283F8E6C0F13A8D500AD4AF9 /* Libraries */ = {
+		283F8E6C0F13A8D500AD4AF9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				283F8E790F13A96F00AD4AF9 /* ASKit */,
 			);
-			path = Libraries;
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		283F8E790F13A96F00AD4AF9 /* ASKit */ = {

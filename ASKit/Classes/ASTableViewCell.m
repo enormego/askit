@@ -7,6 +7,7 @@
 //
 
 #import "ASTableViewCell.h"
+#import "ASTableViewCellLabel.h"
 
 static UIColor* alternateColorList;
 static UIColor* regularColorList;
@@ -94,7 +95,7 @@ UIView* borderViewListAlternate() {
 - (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier type:(ASTableViewCellType)cellType {
 	if((self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier])) {
 		type = cellType == ASTableViewCellTypeList ? ASTableViewCellTypeList : ASTableViewCellTypeContent;
-		
+
 		label = [(type == ASTableViewCellTypeList ? [ASTableViewCellLabel alloc] : [UILabel alloc]) initWithFrame:CGRectMake(10.0f, 0.0f, 300.0f, 44.0f)];
 		
 		label.backgroundColor = [UIColor clearColor];
@@ -138,12 +139,12 @@ UIView* borderViewListAlternate() {
 
 - (void)layoutSubviews {
 	[super layoutSubviews];
-	
+
 	if([self.subviews objectAtIndex:self.subviews.count-1] != borderView) {
 		[borderView removeFromSuperview];
 		[self addSubview:borderView];
 	}
-	
+
 	self.backgroundColor = alternate ? [self alternateColor] : [self regularColor];
 }
 
